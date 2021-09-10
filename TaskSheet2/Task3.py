@@ -19,6 +19,7 @@ def printDifferenceTable(h, actual, approx):
 
 def main():
     actual = -cos(xVal)
+    print(format("h", "<9") + format("-cos(2x)", "<23") + format("Central diff Approx ", "<24") + format("Difference", "<20"))
     for i in range(-1,17):
         if i == -1:
             h = 1

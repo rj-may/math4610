@@ -6,23 +6,35 @@ from math import cos
 xVal = 2
 
 def secDerivApprox(x, h):
-    approximation = (func(x, h) - 2 * func(x) + func(x - h)) / (h * h)
-    return approximation, h
+    approximation = (cos(x + h) - 2 * cos(x) + cos(x - h)) / (h **  2)
+    return approximation
 
-def func(num):
-    return cos(num)
+
 
 def printDifferenceTable(h, actual, approx):
-    diff = math.abs(actual - approx)
-    h = h.tostring()
-    h_sci_not = "{:e}".format(h)
-    print(h + "\t" + actual + "\t" + approx + "\t" + diff)
+    diff = abs(actual - approx)
+    h_sci_not = "{:.1e}".format(h)
+    print(str(h_sci_not) + "\t" + str(actual) + "\t" + format(str(approx), "<20") + "\t" + str(diff))
 
 
 def main():
-    for i in range(0,17):
-        hVal = 1 ** 
+    actual = -cos(xVal)
+    for i in range(-1,17):
+        if i == -1:
+            h = 1
+            approx = secDerivApprox(xVal, h)
+            printDifferenceTable(h, actual, approx)
+        elif i == 0:
+            h = 0.5
+            approx = secDerivApprox(xVal, h)
+            printDifferenceTable(h, actual, approx)
+        else:
+            h = 1 * (10 ** (-1 * i))
+            approx = secDerivApprox(xVal, h)
+            printDifferenceTable(h, actual, approx)
 
+        
+        
 
 main()
 

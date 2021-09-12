@@ -1,3 +1,4 @@
+[Stuff_for_4610.pdf](https://github.com/rj-may/math4610/files/7150464/Stuff_for_4610.pdf)
 Write out the analysis for the centered difference approximation for the
 first derivative (as defined in the lecture) in a Taylor series
 expansions. Show that the approximation is second order.

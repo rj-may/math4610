@@ -14,12 +14,12 @@ def secDerivApprox(x, h):
 def printDifferenceTable(h, actual, approx):
     diff = abs(actual - approx)
     h_sci_not = "{:.1e}".format(h)
-    print(str(h_sci_not) + "\t" + str(actual) + "\t" + format(str(approx), "<20") + "\t" + str(diff))
+    print(str(h_sci_not) + "\t " + str(actual) + "\t" + format(str(approx), "<20") + "\t" + str(diff))
 
 
 def main():
     actual = -cos(xVal)
-    print(format("h", "<9") + format("-cos(2x)", "<23") + format("Central diff Approx ", "<24") + format("Difference", "<20"))
+    print(format("h", "<6") + format("\t -cos(2)", "<25") + format("Central diff Approx ", "<24") + format("Difference", "<20"))
     for i in range(-1,17):
         if i == -1:
             h = 1

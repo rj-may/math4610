@@ -45,7 +45,7 @@ def main():
     plt.plot(hVal, error)
     plt.xlabel("log of h")
     plt.ylabel("log of error")
-    plt.title("The title ")
+    plt.title("Log-log plot ")
 
     plt.show()
 

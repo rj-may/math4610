@@ -2,7 +2,9 @@ import matplotlib.pyplot as plt
 import math
 from math import cos
 
-#import stuff from Task1 
+#this doesn't work on Ubuntu. It doesn't support the graphic.
+
+#copy stuff in from Task1
 xVal = 2
 
 def secDerivApprox(x, h):
@@ -36,10 +38,10 @@ def main():
     # 14 is used because the code breaks find the log of 0
 
     for i in range(len(hVal)):
-        hVal[i] = math.log(hVal[i])
-        error[i] = math.log(error[i])
-    
-
+        hVal[i] = math.log10(hVal[i])
+        error[i] = abs(error[i])
+        error[i] = math.log10(error[i])
+        
 
 
     plt.plot(hVal, error)

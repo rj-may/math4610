@@ -3,7 +3,7 @@ import numpy as np
 
 def singlePrecision():
     x = 1
-    eps = 1/2 #epsilon
+    eps = np.float32(1/2) #epsilon
     for i in range(100):
         xApprox = x + eps
         error = abs(x - xApprox)

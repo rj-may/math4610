@@ -45,7 +45,7 @@ def main():
     plt.plot(hVal, error)
     plt.xlabel("log of h")
     plt.ylabel("log of error")
-    plt.title("Log-log plot ")
+    plt.title("Log-log plot for the cos(2)")
 
     plt.show()
 

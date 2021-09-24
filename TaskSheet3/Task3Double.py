@@ -1,5 +1,6 @@
 # here is the double precision  part of the project
 # This is to test the double precision part of the project
+import numpy as np
 
 def doublePrecision():
     x = 1
@@ -9,7 +10,7 @@ def doublePrecision():
         error = abs(x - xApprox)
         if error == 0:
             break
-        eps = eps /2
+        eps = np.float64(eps /2)
         print(i, error)
 
 def main():

@@ -1,7 +1,7 @@
 #Single precision of of machine epislon
 import numpy as np
 
-def doublePrecision():
+def singlePrecision():
     x = 1
     eps = 1/2 #epsilon
     for i in range(100):
@@ -9,12 +9,11 @@ def doublePrecision():
         error = abs(x - xApprox)
         if error == 0:
             break
-        eps = eps / 2
-        eps = np.float32(eps)
+        eps = np.float32(eps / 2)
         print(i, error)
 
 def main():
-    doublePrecision()
+    singlePrecision()
 
 
 main()

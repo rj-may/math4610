@@ -42,8 +42,8 @@ def main():
 
     # https://en.wikipedia.org/wiki/Order_of_accuracy
     print("First column is the step in hVal squared")
-    print("Second column is the error")
-    print("ratio")
+    print("Second column is the error, and the third column is an attempt at finding the ratio")
+
     for i in range(len(hVal) -1):
         hDiffSquared = (hVal[i]  - hVal[i+1]) ** 2
         print(format(hDiffSquared, "<15"), "\t" ,  format(diff[i], "<10"), "\t" , hDiffSquared / diff[i])

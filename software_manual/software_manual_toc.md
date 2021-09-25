@@ -1,4 +1,4 @@
-This will be the software manual table of contents for Math4610s software. 
+This will be the software manual table of contents for Math4610'ss software. 
 
 
 

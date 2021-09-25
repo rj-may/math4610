@@ -25,8 +25,9 @@ It is also good to test on various machines.
 
 **Implementation/Code:** The following is the code for doublePrecision().
 
-# This is to test the double precision part of the project
-import numpy as np
+#This is to test the double precision part of the project
+
+    c import numpy as np
 
     c def doublePrecision():
     c     print("Iteration, machine epsilon")

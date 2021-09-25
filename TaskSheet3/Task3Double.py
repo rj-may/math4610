@@ -3,6 +3,7 @@
 import numpy as np
 
 def doublePrecision():
+    print("Iteration, machine epsilon")
     x = 1
     eps = 1/2 #epsilon
     for i in range(100):

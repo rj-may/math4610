@@ -7,6 +7,7 @@ Ex : single * double will result with a double. Had to read documentation.
 import numpy as np
 
 def singlePrecision():
+    print("Iteration, machine epsilon")
     x = np.single(1)
     eps = np.single(1/2) #epsilon
     for i in range(40):

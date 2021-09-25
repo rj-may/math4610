@@ -25,7 +25,7 @@ It is also good to test on various machines.
 
 **Implementation/Code:** The following is the code for doublePrecision().
 
-#This is to test the double precision part of the project
+    c #This is to test the double precision part of the project
 
     c import numpy as np
 

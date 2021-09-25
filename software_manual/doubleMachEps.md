@@ -20,10 +20,11 @@ computer being queried.
 
 **Usage/Example:**
 This code has little usage. it is the default for python number unless specifiec otherwise. It does provide a good example of how to use the package numby to create the results wanted with your code.
+It is also good to test on various machines.
+
 
 **Implementation/Code:** The following is the code for doublePrecision().
 
-# here is the double precision  part of the project
 # This is to test the double precision part of the project
 import numpy as np
 

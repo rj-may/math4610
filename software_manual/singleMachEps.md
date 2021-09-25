@@ -20,6 +20,7 @@ computer being queried.
 
 **Usage/Example:**
 This code has little usage. It does provide a good example of how to use the package numby to create the results wanted with your code. 
+It is also good to test on various machines.
 
 **Implementation/Code:** The following is the code for singleMachEps()
 

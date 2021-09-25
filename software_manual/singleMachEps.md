@@ -19,27 +19,27 @@ return values in those variables.
 computer being queried.
 
 **Usage/Example:**
-This code has little usage. It does provide a good example of single precision, and how you must use numpy to round the number
-
+This code has little usage. It does provide a good example of how to use the package numby to create the results wanted with your code. 
 
 **Implementation/Code:** The following is the code for singleMachEps()
 
-#Single precision of of machine epislon
-'''
-important note about using numpy sinlge number; when peforming operations on 2 different things 
-you have to make sure both are the value that you want. It will default between the larger bit value
-Ex : single * double will result with a double. Had to read documentation. 
-'''
-import numpy as np
-
-def singlePrecision():
-    print("Iteration, machine epsilon")
-    x = np.single(1)
-    eps = np.single(1/2) #epsilon
-    for i in range(40):
-        xApprox = x + eps
-        error = abs(x - xApprox)
-        if error == 0:
-            break
-        eps = np.single(eps / 2)
-        print(i, error)7
+    c  #Single precision of of machine epislon
+    c  '''
+    c  important note about using numpy sinlge number; when peforming operations on 2 different things 
+    c  you have to make sure both are the value that you want. It will default between the larger bit value
+    c  Ex : single * double will result with a double. Had to read documentation. 
+    c  '''
+    c  import numpy as np
+    c  
+    c  def singlePrecision():
+    c      print("Iteration, machine epsilon")
+    c      x = np.single(1)
+    c      eps = np.single(1/2) #epsilon
+    c      for i in range(40):
+    c          xApprox = x + eps
+    c          error = abs(x - xApprox)
+    c          if error == 0:
+    c              break
+    c          eps = np.single(eps / 2)
+    c          print(i, error)7
+    c  

@@ -13,5 +13,6 @@ in here, but there will be good stuff located here in the [software manual table
 0. [Software Manual TOC](https://github.com/rj-may/math4610/blob/main/software_manual/software_manual_toc.md)
 1. [Tasksheet 2](https://github.com/rj-may/math4610/tree/main/TaskSheet2)
 2. [Tasksheet 3 ](https://github.com/rj-may/math4610/tree/main/TaskSheet3)
+3. [Tasksheet 4](https://github.com/rj-may/math4610/tree/main/TaskSheet4)
 
 

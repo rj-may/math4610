@@ -1,8 +1,6 @@
-#Math 4610 Fundamentals of Computational Mathematics Software Manual Template File
-This is a template file for building an entry in the student software manual project. You should use the formatting below to
-define an entry in your software manual.
 
-**Routine Name:**           smaceps
+
+**Routine Name:**           funcIter
 
 **Author:** Riley May
 
@@ -19,7 +17,7 @@ The program ends whent the tolerane/ error is met, or the max number of iteratio
 4 The max number of iterations. 
 
 If only the first 3 are inputted it will default to 50 iterations. If only the first 2 are inputted it should default to a tolerance 
-of .1  and max iterations of 50. These aren't ideal, but good for testing your first two inputs. 
+of .1  and max iterations of 100. These aren't ideal, but good for testing your first two inputs. 
 
 **Output:** This routine returns a string saying if a route was found, what it was, and the number of iterations when the program ended. 
 
@@ -35,7 +33,7 @@ It returns strings stating what happened.
 
 
       c # fx is funciton of x, tol is for the tolerance,  maxIter is max iterations
-      c def fixedPoint(x0, fx, tol =.1 , maxIter = 50):
+      c def fixedPoint(x0, fx, tol =.1 , maxIter = 100):
       c     iter = 0
       c     error = 10 * tol
       c     while(error > tol and iter < maxIter):

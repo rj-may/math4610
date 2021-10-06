@@ -2,7 +2,7 @@
 
 
 # fx is funciton of x, tol is for the tolerance,  maxIter is max iterations
-def fixedPoint(x0, fx, tol =.1 , maxIter = 50):
+def fixedPoint(x0, fx, tol =.1 , maxIter = 100):
     iter = 0
     error = 10 * tol
     while(error > tol and iter < maxIter):

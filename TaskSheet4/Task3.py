@@ -9,8 +9,8 @@ def fixedPoint(x0, fx, tol =.1 , maxIter = 20):
         error = abs(x1 - x0)
         x0 = x1
         iter += 1
-        print(iter)
+        #print(iter)
     if iter == maxIter:
-        return "No root found in specified number of iterations"
+        return "No root found in specified number of iterations. The was the last value: " + str(x0)
     else:
-        return x0
+        return str(x0) +  " at  " + str(iter) + "  iterations."

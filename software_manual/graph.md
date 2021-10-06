@@ -27,51 +27,24 @@ g(".5 * (x -5) **2 + 3", "5- 10x")
 
 **Implementation/Code:** The following is the code for smaceps()
 
-      subroutine smaceps(seps, ipow)
-    c
-    c set up storage for the algorithm
-    c --------------------------------
-    c
-          real seps, one, appone
-    c
-    c initialize variables to compute the machine value near 1.0
-    c ----------------------------------------------------------
-    c
-          one = 1.0
-          seps = 1.0
-          appone = one + seps
-    c
-    c loop, dividing by 2 each time to determine when the difference between one and
-    c the approximation is zero in single precision
-    c --------------------------------------------- 
-    c
-          ipow = 0
-          do 1 i=1,1000
-             ipow = ipow + 1
-    c
-    c update the perturbation and compute the approximation to one
-    c ------------------------------------------------------------
-    c
-            seps = seps / 2
-            appone = one + seps
-    c
-    c do the comparison and if small enough, break out of the loop and return
-    c control to the calling code
-    c ---------------------------
-    c
-            if(abs(appone-one) .eq. 0.0) return
-    c
-        1 continue
-    c
-    c if the code gets to this point, there is a bit of trouble
-    c ---------------------------------------------------------
-    c
-          print *,"The loop limit has been exceeded"
-    c
-    c done
-    c ----
-    c
-          return
-    end
-
-**Last Modified:** September/2017
+      c from matplotlib import pyplot as plt
+      c import numpy as np
+      c #
+      c 
+      c def graphFunc(*args):
+      c     for arg in args:
+      c         xVal = []
+      c         yVal = []
+      c         for i in range(-20, 21):
+      c             xVal.append(i)
+      c             eq = arg.replace("x", str(i))
+      c             y = eval(eq)
+      c             yVal.append(y)
+      c         plt.plot(xVal, yVal, label = arg)
+      c     plt.legend()
+      c     plt.xlabel("X axis")
+      c     plt.ylabel("Y axis")
+      c     plt.show()
+      c 
+      c 
+**Last Modified:** Oct 2021

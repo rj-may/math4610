@@ -5,8 +5,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 #
 
-def graphFunc(args):
-
+def graphFunc(*args):
     for arg in args:
         xVal = []
         yVal = []
@@ -17,3 +16,6 @@ def graphFunc(args):
             yVal.append(y)
         plt.plot(xVal, yVal)
     plt.show()
+
+def run():
+    theInput = input("Enter you strings")

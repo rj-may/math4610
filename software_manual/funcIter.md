@@ -29,7 +29,7 @@ It can find routes, but it is not the most efficient.
 
 It returns strings stating what happened. 
 
-**Implementation/Code:** The following is the code for smaceps()
+**Implementation/Code:** The following is the code for funcIter()
 
 
       c # fx is funciton of x, tol is for the tolerance,  maxIter is max iterations

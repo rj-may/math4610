@@ -37,8 +37,8 @@ def main():
     val1 = bisection(start1, end1, funky, tol1)
     print("The root is:  ", val1)
     print()
-    start2 = .725 
-    end2 = .825
+    start2 = .5
+    end2 = 1
     tol2 = 0.005
     print("Bisection with x values,{:f} , {:f}, tolerance of {:f}".format(start2, end2, tol2))
     val2 = bisection(start2, end2, funky, tol2)

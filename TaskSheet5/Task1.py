@@ -1,4 +1,4 @@
-
+import math
 
 def newtonRoot(func, df, x0, maxIter, err):
     if abs(func(x0)) < err: 

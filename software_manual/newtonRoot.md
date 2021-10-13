@@ -1,6 +1,6 @@
 
 
-**Routine Name:**           new  
+**Routine Name:**           newtonRoot
 
 **Author:** Riley May
 

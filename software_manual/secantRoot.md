@@ -20,7 +20,7 @@ it will print that the max number of iterations was reached.
 Here is an example of thhe results. We passed in the parameters that were passed in.
 Iterations should be an integer. 
 
-Funciton with starting x0 = 0.6 x1 = 0.9 with an error of 0.001 and a max number of iterations of 80
+Funciton with starting x0 = 0.6,  x1 = 0.9, with an error of 0.001 and a max number of iterations of 80
 root = secantRoot(func, x0, x1, maxIter, error)
 print("Root: ", root)
 Root:  0.8053820324948411

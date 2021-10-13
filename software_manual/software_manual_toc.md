@@ -13,9 +13,9 @@ Precision:
 
   
  Roots:     
-  [Functional iteration - funcIter](https://github.com/rj-may/math4610/blob/main/software_manual/funcIter.md)
-  [Bisection - bisection](https://github.com/rj-may/math4610/blob/main/software_manual/bisection.md)
-  [Newton Root finding - newtonRoot](https://github.com/rj-may/math4610/blob/main/software_manual/newtonRoot.md)
-  [Secant Root finding - secantRoot](https://github.com/rj-may/math4610/blob/main/software_manual/secantRoot.md)
+  [Functional iteration - funcIter](https://github.com/rj-may/math4610/blob/main/software_manual/funcIter.md)   
+  [Bisection - bisection](https://github.com/rj-may/math4610/blob/main/software_manual/bisection.md)   
+  [Newton Root finding - newtonRoot](https://github.com/rj-may/math4610/blob/main/software_manual/newtonRoot.md)  
+  [Secant Root finding - secantRoot](https://github.com/rj-may/math4610/blob/main/software_manual/secantRoot.md)  
  
   

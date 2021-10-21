@@ -1,22 +1,22 @@
 import math
 from matplotlib import pyplot as plt
-
+from math import log10 as log
 
 def newtonRoot(func, df, x0, maxIter, tol):
     iter = 0
     if abs(func(x0)) < tol: 
-        return x0
+        return "Already a root"
     err_k = []
     err_kplus1 = []
-    error = 10 * tol
+    error = 10* tol
     while (error > tol and iter < maxIter):
-        err_k.append(error)
+        err_k.append(log(error))
         xNext = x0 - func(x0)/df(x0)
         error = abs(xNext - x0)
-        err_kplus1.append(error)
+        err_kplus1.append(log(error))
         iter += 1
         x0  = xNext
-    return error, err_kplus1
+    return err_k, err_kplus1
 
 
 def func(x):
@@ -36,6 +36,7 @@ def main():
     plt.legend()
     plt.xlabel("X axis")
     plt.ylabel("Y axis")
+    plt.title("Log-Log plot of error of Netwon's Method")
     plt.show()
 
 main()

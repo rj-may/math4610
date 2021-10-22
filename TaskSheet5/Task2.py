@@ -6,7 +6,7 @@ def secantRoot(func, x0, x1, maxIter, err):
     for i in range(maxIter):
         x2 = x1 - func(x1) * (x1 - x0)/ (func(x1)- func(x0))
         if abs(x2 - x1) < err:
-            return x2
+            return x2 #break with result
         x0, x1 = x1, x2 # reassigning variables. 
 
     print("Max iterations reached. ")

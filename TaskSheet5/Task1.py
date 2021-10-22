@@ -7,7 +7,7 @@ def newtonRoot(func, df, x0, maxIter, err):
     for i in range(maxIter):
         xNext = x0 - func(x0)/df(x0)
         if abs(xNext - x0) < err:
-            return xNext
+            return xNext #break with result
         x0 = xNext
 
     print("Max iterations reached. ")

@@ -25,7 +25,7 @@ def main():
     x1 = .7
     error = .001
     maxIter = 80
-    print("Funciton with starting x = %f with an error of %f and a max number of iterations of %d" %(x1, error, maxIter))
+    print("Funciton with starting x = %g with an error of %g and a max number of iterations of %d" %(x1, error, maxIter))
     root = newtonRoot(func, df, x1, maxIter, error)
     print("Root: ", root)
     

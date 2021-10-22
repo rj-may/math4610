@@ -17,7 +17,7 @@ def hybridRoot(func, df, x0, a, b, maxIter, tol):
         errorNext = abs(xNext - x0)
         if errorNext < tol:
             return xNext
-        if (errorNext > error or a > xNext or b < xNext ):
+        if (errorNext > error or a > xNext or b < xNext ): #guarantees that the root we are getting closer to is between (a,b)
             ## do bisection 
             for i in range(4): # recommended iterations for bisection
                 c = 1/2 * (a + b)

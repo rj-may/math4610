@@ -21,7 +21,7 @@ def main():
     x1 = .9
     error = .001
     maxIter = 80
-    print("Funciton with starting x0 = %f, x1 = %f, with an error of %f and a max number of iterations of %d" %(x0, x1, error, maxIter))
+    print("Funciton with starting x0 = %g, x1 = %g, with an error of %g and a max number of iterations of %d" %(x0, x1, error, maxIter))
     root = secantRoot(func, x0, x1, maxIter, error)
     print("Root: ", root)
     

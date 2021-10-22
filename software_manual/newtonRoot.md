@@ -17,7 +17,7 @@ it will print that the max number of iterations was reached.
 
 **Usage/Example:**
 
-Here is an example of thhe results. We passed in the parameters that were passed in.
+Here is an example of the results. We passed in the parameters that were passed in.
 Iterations should be an integer.  
 
 Funciton with starting x = 0.7 with an error of 0.001 and a max number of iterations of 80

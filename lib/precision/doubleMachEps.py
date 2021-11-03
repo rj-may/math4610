@@ -4,8 +4,8 @@ import numpy as np
 
 def doublePrecision():
     print("Iteration, machine epsilon")
-    x = 1
-    eps = 1/2 #epsilon
+    x = np.float64(1)
+    eps = np.float64(1/2) #epsilon
     for i in range(100):
         xApprox = x + eps
         error = abs(x - xApprox)
@@ -14,4 +14,4 @@ def doublePrecision():
         eps = np.float64(eps /2)
         print(i, error)
 
-
+doublePrecision()

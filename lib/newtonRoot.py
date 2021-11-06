@@ -12,14 +12,11 @@ def newtonRoot(func, df, x0, maxIter, err):
 
     print("Max iterations reached. ")
 
-
 # def func(x):
 #     return ( (x * math.exp(3 * x * x)) - (7 * x) )
 
 # def df(x):
 #     return (math.exp(3 * x * x) + 6 * x * x * math.exp(3 * x * x)-7)
-
-
 # def main():
 #     x1 = .7
 #     error = .001
@@ -27,7 +24,5 @@ def newtonRoot(func, df, x0, maxIter, err):
 #     print("Funciton with starting x = %f with an error of %f and a max number of iterations of %d" %(x1, error, maxIter))
 #     root = newtonRoot(func, df, x1, maxIter, error)
 #     print("Root: ", root)
-    
-# main()
-
-    
+   
+# main()    

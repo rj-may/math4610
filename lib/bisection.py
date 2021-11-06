@@ -27,8 +27,6 @@ def bisection(a, b, func, tol):
 # test code
 # def funky(x):
 #     return ( (x * math.exp(3 * x * x)) - (7 * x) )
-
-
 # def main():
 #     start1 = -.25
 #     end1 = .25
@@ -43,6 +41,4 @@ def bisection(a, b, func, tol):
 #     print("Bisection with x values,{:f} , {:f}, tolerance of {:f}".format(start2, end2, tol2))
 #     val2 = bisection(start2, end2, funky, tol2)
 #     print("The root is:  ", val2)
-
-
 # main()

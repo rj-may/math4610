@@ -28,7 +28,7 @@ def main():
 
 
     print()
-    x0 = .6
+    x0 = 6
     print("x0= ", x0, ". Tol = ", tol)
     nRoot = newtonRoot(function, df, x0, maxIter, tol)
     print("Newton root: ", nRoot)

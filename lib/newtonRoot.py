@@ -5,6 +5,8 @@ def newtonRoot(func, df, x0, maxIter, err):
         return x0
     xNext = x0
     for i in range(maxIter):
+        if df(x0) == 0:
+            return "Mathematical error"
         xNext = x0 - func(x0)/df(x0)
         if abs(xNext - x0) < err:
             return xNext #break with result

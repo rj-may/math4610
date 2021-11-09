@@ -3,12 +3,10 @@ from math import sin
 from math import cos
 from math import exp
 
-
 import sys
 sys.path.insert(0, '../lib/')
 
 from newtonRoot import newtonRoot
-
 
 def function(x):
     y = exp(-1 *(x * x)) * sin(4 * x *x - 1.0) + 0.051
@@ -25,7 +23,6 @@ def main():
     print("x0= ", x0, ". Tol = ", tol)
     nRoot = newtonRoot(function, df, x0, maxIter, tol)
     print("Newton root: ", nRoot)
-
 
     print()
     x0 = 6

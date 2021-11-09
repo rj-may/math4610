@@ -15,4 +15,4 @@ in here, but there will be good stuff located here in the [software manual table
 2. [Tasksheet 3 ](https://github.com/rj-may/math4610/tree/main/TaskSheet3)
 3. [Tasksheet 4](https://github.com/rj-may/math4610/tree/main/TaskSheet4)
 4. [Tasksheet 5](https://github.com/rj-may/math4610/tree/main/TaskSheet5)
-
+5. [Tasksheet 6](https://github.com/rj-may/math4610/tree/main/TaskSheet6)

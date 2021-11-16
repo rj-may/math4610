@@ -12,9 +12,9 @@ def initialize(size):
         for col in row:
             j=1
             if j >= i:
-                row[j-1] = i  + j -1
+                col = i  + j -1
             if j < i:
-                row[j-1] = 0
+                col = 0
             j+=1
         i+=1
 

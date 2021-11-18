@@ -37,8 +37,8 @@ def main():
     print("The matrix dim =", dim)
     A, b = initialize(dim)
     x = backsolve(A, b)
-    print(A)
-    print(x)
+    print("This is matrix A: ", A)
+    print("This is the solution to a column of 1s:", x)
 
 main()
 # initialize(3)

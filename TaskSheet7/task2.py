@@ -20,18 +20,40 @@ def transpose(mtrx):
     for i in range(size):
         for j in range(size):
             mtrxT[i][j] = mtrx[j][i]
-    print("this is mrtxT", mtrxT)
+    #print("this is mrtxT", mtrxT)
     # for i in mtrxT:
     #     for j in i:
     #         print(j, end=" ")
     #     print(" ")
     return mtrxT
 
+
+
+def forwardSolve(mtrx, vecB):
+    n = len(vecB)
+    vecX = [None for i in range(n)]
+    m = n -1
+    vecX[0] = vecB[0] / mtrx[0][0]
+    for i in range(1, n):
+        summation = vecB[i]
+        for j in range(0, i):
+            summation -= ( mtrx[i][j] * vecX[j])
+        vecX[i] = summation / mtrx[i][i]
+    return vecX
+
+
+
 def main():
-    A = initialize(3)
-    print(A)
+    size = 3
+    A = initialize(size)
+    print("This is A", A)
     AT = transpose(A)
-    print(AT)
+    print("This is A^T: ", AT)
+    vecB = [1 for j in range(size)]
+    x = forwardSolve(AT, vecB)
+    print("This is the solution to a column of 1s", x)
+
+
 
 main()
     

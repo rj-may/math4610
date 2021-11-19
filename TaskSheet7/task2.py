@@ -20,11 +20,6 @@ def transpose(mtrx):
     for i in range(size):
         for j in range(size):
             mtrxT[i][j] = mtrx[j][i]
-    #print("this is mrtxT", mtrxT)
-    # for i in mtrxT:
-    #     for j in i:
-    #         print(j, end=" ")
-    #     print(" ")
     return mtrxT
 
 

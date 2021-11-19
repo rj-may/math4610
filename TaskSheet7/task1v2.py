@@ -34,7 +34,7 @@ def backsolve(mtrx, vecB):
 
 def main():
     dim = 3
-    print("The matrix dim =", dim)
+    print("The matrix size =", dim)
     A, b = initialize(dim)
     x = backsolve(A, b)
     print("This is matrix A: ", A)

@@ -34,7 +34,7 @@ Eliminated col 1s
 Sol x:  [0.053608247422680416, -0.2268041237113402, -0.08659793814432988, -0.20824742268041235] 
 
 
-**Implementation/Code:** The following is the code for smaceps()
+**Implementation/Code:** The following is the code for backsolve()
 
 
       def backsolve(mtrx, vecB):

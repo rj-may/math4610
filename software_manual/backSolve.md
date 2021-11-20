@@ -1,88 +1,44 @@
-#Math 4610 Fundamentals of Computational Mathematics Software Manual Template File
-This is a template file for building an entry in the student software manual project. You should use the formatting below to
-define an entry in your software manual.
+#Math 4610 Fundamentals of Computational Mathematics Software Manual T
 
-**Routine Name:**           smaceps
+**Routine Name:**           backsolve.py
 
 **Author:** Riley May
 
 **Language:** python
 
-**Description/Purpose:** This routine will compute the single precision value for the machine epsilon or the number of digits
-in the representation of real numbers in single precision. This is a routine for analyzing the behavior of any computer. This
-usually will need to be run one time for each computer.
+**Description/Purpose:** This routine will compute the solution of an eliminated system of Ax=b. It is great for solving 
+systems of linear equations. 
 
-**Input:** There are no inputs needed in this case. Even though there are arguments supplied, the real purpose is to
-return values in those variables.
+**Input:** A matrix (2 dimensional list), and a vector (list), such that it is the eliminated Ax=b
 
 **Output:** This routine returns a single precision value for the number of decimal digits that can be represented on the
 computer being queried.
 
 **Usage/Example:**
 
-The routine has two arguments needed to return the values of the precision in terms of the smallest number that can be
-represented. Since the code is written in terms of a Fortran subroutine, the values of the machine machine epsilon and
-the power of two that gives the machine epsilon. Due to implicit Fortran typing, the first argument is a single precision
-value and the second is an integer.
+This function needs two methods to work. 
+It takes a square matrix of any size with its accompanying vector b. This is for the traditional vector Ax=b. 
 
-      call smaceps(sval, ipow)
-      print *, ipow, sval
+It returns a vector (list) x such that is the solution. 
 
-Output from the lines above:
-
-      24   5.96046448E-08
-
-The first value (24) is the number of binary digits that define the machine epsilon and the second is related to the
-decimal version of the same value. The number of decimal digits that can be represented is roughly eight (E-08 on the
-end of the second value).
+Examples:
+Eliminated matrix                                                                                                                                                                  [8, 1, -2, -3]                                                                                                                                                                   [0.0, -9.875, 1.75, 4.625]                                                                                                                                                       [0.0, 0.0, 11.164556962025316, -5.493670886075949]                                                                                                                               [0.0, 0.0, 0.0, -7.698412698412699]                                                                                                                                              Eliminated col 1s                                                                                                                                                               [1, 1.125, 0.17721518987341778, 1.603174603174603]                                                                                                                              Sol x:  [0.053608247422680416, -0.2268041237113402, -0.08659793814432988, -0.20824742268041235] 
 
 **Implementation/Code:** The following is the code for smaceps()
 
-      subroutine smaceps(seps, ipow)
-    c
-    c set up storage for the algorithm
-    c --------------------------------
-    c
-          real seps, one, appone
-    c
-    c initialize variables to compute the machine value near 1.0
-    c ----------------------------------------------------------
-    c
-          one = 1.0
-          seps = 1.0
-          appone = one + seps
-    c
-    c loop, dividing by 2 each time to determine when the difference between one and
-    c the approximation is zero in single precision
-    c --------------------------------------------- 
-    c
-          ipow = 0
-          do 1 i=1,1000
-             ipow = ipow + 1
-    c
-    c update the perturbation and compute the approximation to one
-    c ------------------------------------------------------------
-    c
-            seps = seps / 2
-            appone = one + seps
-    c
-    c do the comparison and if small enough, break out of the loop and return
-    c control to the calling code
-    c ---------------------------
-    c
-            if(abs(appone-one) .eq. 0.0) return
-    c
-        1 continue
-    c
-    c if the code gets to this point, there is a bit of trouble
-    c ---------------------------------------------------------
-    c
-          print *,"The loop limit has been exceeded"
-    c
-    c done
-    c ----
-    c
-          return
-    end
 
-**Last Modified:** September/2017
+      def backsolve(mtrx, vecB):
+          n = len(vecB)
+          vecX = [0 for i in range(n)]
+          m = n - 1
+          vecX[m] = vecB[m] / mtrx[m][m]
+          for i in range(m -1,-1, -1,): #start at m-1, second to last entry, we want to include the 0th entry, -1 is indexing backward
+              summation = vecB[i]
+              for j in range(i+1, n):
+                  
+                  summation = summation - mtrx[i][j] * vecX[j]
+              vecX[i] = summation / mtrx[i][i]
+      
+          return vecX
+
+**Last Modified:** Nov 2021

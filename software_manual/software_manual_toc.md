@@ -6,7 +6,7 @@ This will be the software manual table of contents for Math4610'ss software.  No
  Graph:   
   [Graphys functions - graph.py](https://github.com/rj-may/math4610/blob/main/software_manual/graph.md)
   
-  Math:
+  Matrices:  
    [Back solve - backsolve.py](https://github.com/rj-may/math4610/blob/main/software_manual/backSolve.md)  
    [Gaussian Elimination - gaussElim.py](https://github.com/rj-may/math4610/blob/main/software_manual/gaussElim.md)
 

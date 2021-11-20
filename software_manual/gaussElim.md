@@ -17,8 +17,19 @@ so that way backsolved. This should work on a independent square system.
 This method takes a matrix (two dimensional list), and a vector (list). It performs Gaussian elimination on them. 
 
 Here is an example of the outpu. 
-Original matrix                                                                                                                                                                   [8, 1, -2, -3]
-[-1, -10, 2, 5]                                                                                                                                                                   [1, -6, 12, -3]                                                                                                                                                                   [-3, 2, 3, -9]                                                                                                                                                                    Eliminated matrix                                                                                                                                                                 [8, 1, -2, -3]                                                                                                                                                                   [0.0, -9.875, 1.75, 4.625]                                                                                                                                                     [0.0, 0.0, 11.164556962025316, -5.493670886075949]                                                                                                                               [0.0, 0.0, 0.0, -7.698412698412699]                                                                                                                                               Eliminated col 1s                                                                                                                                                                  [1, 1.125, 0.17721518987341778, 1.603174603174603]  
+Original matrix 
+[8, 1, -2, -3]
+[-1, -10, 2, 5]    
+[1, -6, 12, -3]
+[-3, 2, 3, -9]   
+Eliminated matrix  \
+[8, 1, -2, -3]        
+[0.0, -9.875, 1.75, 4.625] \\
+[0.0, 0.0, 11.164556962025316, -5.493670886075949]
+[0.0, 0.0, 0.0, -7.698412698412699]          
+Eliminated col 1s                      
+[1, 1.125, 0.17721518987341778, 1.603174603174603]  
+
 
 **Implementation/Code:** The following is the code for smaceps()
       

@@ -11,8 +11,7 @@ systems of linear equations.
 
 **Input:** A matrix (2 dimensional list), and a vector (list), such that it is the eliminated Ax=b
 
-**Output:** This routine returns a single precision value for the number of decimal digits that can be represented on the
-computer being queried.
+**Output:** This routine returns a vector solution to the system of equations. 
 
 **Usage/Example:**
 

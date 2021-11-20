@@ -17,11 +17,11 @@ so that way backsolved. This should work on a independent square system.
 This method takes a matrix (two dimensional list), and a vector (list). It performs Gaussian elimination on them. 
 
 Here is an example of the outpu. 
-Original matrix 
-[8, 1, -2, -3]
-[-1, -10, 2, 5]    
-[1, -6, 12, -3]
-[-3, 2, 3, -9]   
+Original matrix    
+[8, 1, -2, -3]  
+[-1, -10, 2, 5]      
+[1, -6, 12, -3]    
+[-3, 2, 3, -9]     
 Eliminated matrix  
 [8, 1, -2, -3]        
 [0.0, -9.875, 1.75, 4.625]    

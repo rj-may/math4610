@@ -8,12 +8,16 @@
 
 **Description/Purpose:** This code is to compute the LU factorization of a matrix. It is assuming good pivots in the elimination steps. 
 It will out two matrices L and U such L * U = A. It should work on most square independent matrices. 
+This is good for solving different values of b instead of recombuting an elimiated b every time. 
+
 
 **Input:**  It take two dimensional list (matrix) as the input 
 
 **Output:** It outputs two two-dimensional lists (2 matrices) as the output. 
 
 **Usage/Example:** 
+
+This code can factor the matrices out. This is good for solving different values of b instead of recombuting an elimiated b every time. 
 
 Original matrix    
 [3, -7, -2, 2]    

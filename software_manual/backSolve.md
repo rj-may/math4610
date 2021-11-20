@@ -22,7 +22,15 @@ It takes a square matrix of any size with its accompanying vector b. This is for
 It returns a vector (list) x such that is the solution. 
 
 Examples:
-Eliminated matrix                                                                                                                                                                  [8, 1, -2, -3]                                                                                                                                                                   [0.0, -9.875, 1.75, 4.625]                                                                                                                                                       [0.0, 0.0, 11.164556962025316, -5.493670886075949]                                                                                                                               [0.0, 0.0, 0.0, -7.698412698412699]                                                                                                                                              Eliminated col 1s                                                                                                                                                               [1, 1.125, 0.17721518987341778, 1.603174603174603]                                                                                                                              Sol x:  [0.053608247422680416, -0.2268041237113402, -0.08659793814432988, -0.20824742268041235] 
+Eliminated matrix
+[8, 1, -2, -3]   
+[0.0, -9.875, 1.75, 4.625]   
+[0.0, 0.0, 11.164556962025316, -5.493670886075949]   
+[0.0, 0.0, 0.0, -7.698412698412699]     
+Eliminated col 1s         
+[1, 1.125, 0.17721518987341778, 1.603174603174603] 
+Sol x:  [0.053608247422680416, -0.2268041237113402, -0.08659793814432988, -0.20824742268041235] 
+
 
 **Implementation/Code:** The following is the code for smaceps()
 

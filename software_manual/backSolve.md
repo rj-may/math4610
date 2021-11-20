@@ -22,7 +22,7 @@ It takes a square matrix of any size with its accompanying vector b. This is for
 It returns a vector (list) x such that is the solution. 
 
 Examples:
-Eliminated matrix
+Eliminated matrix  
 [8, 1, -2, -3]   
 [0.0, -9.875, 1.75, 4.625]   
 [0.0, 0.0, 11.164556962025316, -5.493670886075949]   

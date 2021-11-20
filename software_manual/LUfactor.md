@@ -1,6 +1,6 @@
 #Math 4610 Fundamentals of Computational Mathematics Software Manual file
 
-**Routine Name:**           Lufactor
+**Routine Name:**           LUfactor
 
 **Author:** Riley May
 

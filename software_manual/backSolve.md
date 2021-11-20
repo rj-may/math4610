@@ -16,7 +16,7 @@ computer being queried.
 
 **Usage/Example:**
 
-This function needs two methods to work. 
+This function needs two parameters to work. 
 It takes a square matrix of any size with its accompanying vector b. This is for the traditional vector Ax=b. 
 
 It returns a vector (list) x such that is the solution. 

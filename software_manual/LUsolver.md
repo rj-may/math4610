@@ -20,7 +20,9 @@ It is not recommended because of the memory requirement of computing L. I would 
 This equation is another method to solve an equation  Ax=b once.
 
 
-**Implementation/Code:** The following is the code for smaceps()
+**Implementation/Code:** The following is the code for LUfactor()
+
+
       def LUfactor(mtrx):
           n = len(mtrx)
           lower = [[0 for i in range(n)] for i in range(n)]

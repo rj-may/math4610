@@ -3,7 +3,7 @@
 # This code uses scaled partial pivoting. 
 
 
-def gaussElimScaledPartialPivot(mtrx, vecB):
+def geScaledPivot(mtrx, vecB):
     #first scale it to the value with the largest magnitude. 
     rowNum = 0 # I needed this because I couldn't get to the b vector without it. 
     for row in mtrx:

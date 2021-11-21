@@ -31,7 +31,7 @@ Here is an example of the output.
       [1, 1.125, 0.17721518987341778, 1.603174603174603]  
       
 
-**Implementation/Code:** The following is the code for smaceps()
+**Implementation/Code:** The following is the code for gaussElim()
       
        def gaussElim(mtrx, vecB):
           n = len(vecB)

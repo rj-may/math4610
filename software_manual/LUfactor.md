@@ -18,22 +18,22 @@ This is good for solving different values of b instead of recombuting an elimiat
 **Usage/Example:** 
 
 This code can factor the matrices out. This is good for solving different values of b instead of recombuting an elimiated b every time. 
-
-Original matrix    
-[3, -7, -2, 2]    
-[-3, 5, 1, 0]     
-[6, -4, 0, -5]    
-[-9, 5, -5, 12]   
-Lower =     
-[1, 0, 0, 0]      
-[-1.0, 1, 0, 0]   
-[2.0, -5.0, 1, 0]       
-[-3.0, 8.0, 3.0, 1]     
-Upper =     
-[3, -7, -2, 2]    
-[0.0, -2.0, -1.0, 2.0]        
-[0.0, 0.0, -1.0, 1.0]   
-[0.0, 0.0, 0.0, -1.0]   
+      
+      Original matrix    
+      [3, -7, -2, 2]    
+      [-3, 5, 1, 0]     
+      [6, -4, 0, -5]    
+      [-9, 5, -5, 12]   
+      Lower =     
+      [1, 0, 0, 0]      
+      [-1.0, 1, 0, 0]   
+      [2.0, -5.0, 1, 0]       
+      [-3.0, 8.0, 3.0, 1]     
+      Upper =     
+      [3, -7, -2, 2]    
+      [0.0, -2.0, -1.0, 2.0]        
+      [0.0, 0.0, -1.0, 1.0]   
+      [0.0, 0.0, 0.0, -1.0]   
 
 **Implementation/Code:** The following is the code for LUfactor()
 

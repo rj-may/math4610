@@ -10,7 +10,7 @@ This will be the software manual table of contents for Math4610'ss software.  No
    [Back solve - backsolve.py](https://github.com/rj-may/math4610/blob/main/software_manual/backSolve.md)  
    [Forward solve- forwardsolve.py](https://github.com/rj-may/math4610/blob/main/software_manual/LUsolver.md)      
     [Gaussian Elimination - gaussElim.py](https://github.com/rj-may/math4610/blob/main/software_manual/gaussElim.md)     
-   [Gaussian elimination with scaled pivoting -geScaledpivot](https://github.com/rj-may/math4610/blob/main/software_manual/gaussElimScaledPivot.md)    
+   [Gaussian elimination with scaled pivoting -geScaledPivot](https://github.com/rj-may/math4610/blob/main/software_manual/gaussElimScaledPivot.md)    
    [LU factor - LUfactor.py](https://github.com/rj-may/math4610/blob/main/software_manual/LUfactor.md)    
    [LU solver - LUsolver.py](https://github.com/rj-may/math4610/blob/main/software_manual/LUsolver.md)     
    

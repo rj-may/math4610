@@ -1,86 +1,89 @@
-#Math 4610 Fundamentals of Computational Mathematics Software Manual Template File
+#Math 4610 Fundamentals of Computational Mathematics Software Manual File
 
 
-**Routine Name:**           vecOps: vecAdd, vecSub, dotProd, outerProd
+**Routine Name:**           vecNorms: l1Norm, l2Norm, LInfNorm, l1NormErr, l2NormErr, lInfNormErr
 
 **Author:** Riley May
 
 **Language:** python
 
-**Description/Purpose:** This program calculates various vector operations. Those are vector addition (vecAdd), vector subtraction (vecSub),dot product (dotProd), and outer product (outerProd).
+**Description/Purpose:** This program calculates various norms.  operations.  The included vector norms are the L1 norm, the L2 norm, the L infinity norm, and errors for each of those. 
 
-**Input:** The input for this program is two differente vectors. In the case of the dot product and outer product they need 
-to be vectors of the same size. 
+**Input:** The input for the L1, L2 and Linfinty norms are all vectors. 
+The input for all of the error functions are two vectors of the same size. 
 
-It is important to note that the vector that in vector subtraction that
-that it goes first vector minus the second. 
-In outer product: it the first vector times the second vector transposed
 
 **Output:** 
-For vector addition and subtraction it outputs a list (vector).  
-For dot product it will be an integer.    
-For outer productit will be a two dimensional list. 
+
+All of the vector operations willl return a single numerical value. 
+
 
 **Usage/Example:**
 
-These are basic vector operations
+Here is an example of the code working.     
+It is fairly simple code. The exact code that was run is found in Task2 of Tasksheet 9, but the output explains what is going on. 
 
-x = [1, 2, 3]
-y =  [4, 5, -6, 7]
-z =  [2, -3, 1]
-l1 norm of y=  22
-l2 norm of x= 3.7416573867739413
-l infinity norm of z= -3
-L1 Norm error of x, z = 8
-L2 Norm error of x, z = 5.477225575051661
-L infinity Norm error of x, z = 5
+    x = [1, 2, 3]
+    y =  [4, 5, -6, 7]
+    z =  [2, -3, 1]
+    l1 norm of y=  22
+    l2 norm of x= 3.7416573867739413
+    l infinity norm of z= -3
+    L1 Norm error of x, z = 8
+    L2 Norm error of x, z = 5.477225575051661
+    L infinity Norm error of x, z = 5
 
 
 
-      def vecAdd(x, y):
-          #adds to vectors together
-          if len(x) > len(y):
-              for i in range(len(y)):
-                  x[i] += y[i]
-              return x
-          else:
-              for i in range(len(x)):
-                  y[i] += x[i]
-              return y
 
-      def vecSub(x, y):
-          #code for the the second vector subtracted from the first
-          if len(x) >= len(y):
-              for i in range(len(y)):
-                  x[i] -= y[i]
-              return x
-          else:
-              new = [None] *  len(y) 
-              for i in range(len(x)):
-                  new[i] = x[i] - y[i]
-              for j in range(len(x), len(y)):
-                  new[j] = y[j] * -1
-              return new
+**Implementation/Code** The following code is for  vecNorms.py
 
-      def dotProd(x, y):
-          #This code returns the dot product if the vectors are of the same size
-          if len(x) != len(y):
-              return "Vectors are not in the same R"
-          else:
-              prod = 0
-              for i in range(len(x)):
-                  prod += x[i] * y[i]
-              return prod
+These are basic vector normal operations. 
 
-      def outerProd(x, y):
-          #the is code calculates an outer product
-          if len(x) != len(y):
-              return "Vectors are not in the same R"
-          #This initializes it to be the size that we want. 
-          result = [[None for i in range(len(y))] for k in range(len(x))]
-          for j in range(len(y)):
-              for k in range(len(x)):
-                  result[k][j] = y[j] * x[k]
-          return result
+    def l1Norm(x):
+        norm = 0
+        for i in range(len(x)):
+            norm += abs(x[i])
+        return norm
+
+
+    def l2Norm(x):
+        normsqd = 0
+        for i in range(len(x)):
+            normsqd += x[i] * x[i]
+        norm = normsqd ** (1/2)
+        return norm
+
+    def lInfNorm(x):
+        norm = 0
+        for i in range(len(x)):
+            if abs(x[i]) > abs(norm):
+                norm = x[i]
+        return norm
+
+    def subtract(x, y):
+        if len(x) != len(y):
+            return "error in vector size"
+        err = [None for i in range(len(x))]
+        for i in range(len(x)):
+            err[i] = x[i] - y[i]
+        return err
+
+    def l1NormErr(x, y):
+        e = subtract(x, y)
+        return l1Norm(e)
+
+    def l2NormErr(x, y):
+        e = subtract(x, y)
+        return l2Norm(e)
+
+    def lInfNormErr(x, y):
+        e = subtract(x, y)
+        return lInfNorm(e)
+
+
+
+
+
 
 **Last Modified:** December/2021

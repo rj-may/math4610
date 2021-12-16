@@ -16,10 +16,10 @@
 
 This rout outputs the largest eigenvalue usign the power method. 
 
-When I ran this code on 100x100 matrix, it produced eigeenvalues. 
+When I ran this code on 100x100 matrix diagonally dominant matrix , it produced the following eigeenvalues.           
     largest eigen value =  228.05502704975788              
     largest eigen value =  214.79032495455218                                  
-     largest eigen value =  220.32854192962827                                
+    largest eigen value =  220.32854192962827                                
 
 **Implementation/Code:** The following is the code for powerMethod()
 

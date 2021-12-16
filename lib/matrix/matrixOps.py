@@ -42,7 +42,7 @@ def scalarMatrix(A, scalar):
            C[i][j] = A[i][j] * scalar
     return C
 
-def matrixVectMult(A, x):
+def matrixVecMult(A, x):
     b = [None for i in range(len(A))]
     if len(A[0]) != len(x):
         return "Sizes don't match"

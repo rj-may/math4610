@@ -25,15 +25,16 @@ For outer productit will be a two dimensional list.
 
 These are basic vector operations
 
-    x = [1, 2, 3]
-    y =  [4, 5, 6, 7]
-    z =  [2, 3, 1]
-    x + y =  [5, 7, 9, 7]
-    x - y = [-4, -5, -6, -7]
-    dot product of x, z = 11
-    Outerproduct x * z = [[2, 3, 1], [4, 6, 2], [6, 9, 3]]
+x = [1, 2, 3]
+y =  [4, 5, -6, 7]
+z =  [2, -3, 1]
+l1 norm of y=  22
+l2 norm of x= 3.7416573867739413
+l infinity norm of z= -3
+L1 Norm error of x, z = 8
+L2 Norm error of x, z = 5.477225575051661
+L infinity Norm error of x, z = 5
 
-**Implementation/Code:** The following is the code for vecOps
 
 
       def vecAdd(x, y):

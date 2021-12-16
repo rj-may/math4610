@@ -4,7 +4,7 @@ This will be the software manual table of contents for Math4610'ss software.  No
   [Error functions - errror.py](https://github.com/rj-may/math4610/blob/main/software_manual/error.md)
   
  Graph:   
-  [Graphys functions - graph.py](https://github.com/rj-may/math4610/blob/main/software_manual/graph.md)
+  [Graphs functions - graph.py](https://github.com/rj-may/math4610/blob/main/software_manual/graph.md)
   
   Matrices:   (this code is found in the matrix subfolder of lib)        
    [Back solve - backsolve.py](https://github.com/rj-may/math4610/blob/main/software_manual/backSolve.md)  

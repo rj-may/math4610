@@ -14,7 +14,8 @@ This will be the software manual table of contents for Math4610'ss software.  No
    [LU factor - LUfactor.py](https://github.com/rj-may/math4610/blob/main/software_manual/LUfactor.md)     
    [LU solver - LUsolver.py](https://github.com/rj-may/math4610/blob/main/software_manual/LUsolver.md)     
    [Matrix operations - matrixOps.py](https://github.com/rj-may/math4610/blob/main/lib/matrix/matrixOps.py)   
-   [Power method - powerMethod.py](https://github.com/rj-may/math4610/blob/main/software_manual/powerMethod.md)    
+   [Power method - powerMethod.py](https://github.com/rj-may/math4610/blob/main/software_manual/powerMethod.md)  
+   [Power method inverse = powerMethodInverse.py](https://github.com/rj-may/math4610/blob/main/software_manual/powerMethodInverse.md)  
    [Vector Norms - vecNorms.py](https://github.com/rj-may/math4610/blob/main/software_manual/vecNorms.md)  
    [Vector Operations -vecOps.py](https://github.com/rj-may/math4610/blob/main/software_manual/vectorOperations.md)  
    

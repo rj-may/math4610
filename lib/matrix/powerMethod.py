@@ -1,28 +1,9 @@
-from random import randint
-
-import numpy
 import sys
 sys.path.insert(0, '../lib/')
 
 from matrix.vecNorms import l2Norm
 from matrix.matrixOps import matrixVecMult
 from matrix.vecOps import dotProd
-
-
-def printMatrix(A):
-    for line in A:
-        print(line)
-
-
-def diagonallyDominant():
-    matrix = [[None for i in range(100)] for j in range(100)]
-    for i in range(100):
-        for j in range(100):
-            if i == j:
-                matrix[i][j] = randint(101, 200)
-            else:
-                matrix[i][j] = randint(-10, 10)
-    return matrix
 
 
 def powerMethod(matrix, x0, lmbd0, tol, maxiter): #lmbd0 refers to initial guess of the eigen value
@@ -48,10 +29,3 @@ def powerMethod(matrix, x0, lmbd0, tol, maxiter): #lmbd0 refers to initial guess
 
 
 
-def main():
-    A = diagonallyDominant()
-    x0 = [1 for i in range(100)]
-    lmbd = 2
-    var = powerMethod(A, x0, lmbd, .1, 30)
-    print("largest eigen value = ", var)    
-main()

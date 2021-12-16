@@ -12,7 +12,8 @@ This will be the software manual table of contents for Math4610'ss software.  No
     [Gaussian Elimination - gaussElim.py](https://github.com/rj-may/math4610/blob/main/software_manual/gaussElim.md)     
    [Gaussian elimination with scaled pivoting -geScaledPivot](https://github.com/rj-may/math4610/blob/main/software_manual/gaussElimScaledPivot.md)    
    [LU factor - LUfactor.py](https://github.com/rj-may/math4610/blob/main/software_manual/LUfactor.md)    
-   [LU solver - LUsolver.py](https://github.com/rj-may/math4610/blob/main/software_manual/LUsolver.md)     
+   [LU solver - LUsolver.py](https://github.com/rj-may/math4610/blob/main/software_manual/LUsolver.md)  
+    [Vector Operations -vecOps.py](https://github.com/rj-may/math4610/blob/main/software_manual/vectorOperations.md)
    
 
 Precision:  

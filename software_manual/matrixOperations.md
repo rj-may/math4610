@@ -1,27 +1,28 @@
 #Math 4610 Fundamentals of Computational Mathematics Software Manual File
 
 
-**Routine Name:**           vecNorms: l1Norm, l2Norm, LInfNorm, l1NormErr, l2NormErr, lInfNormErr
+**Routine Name:**           matrixOps: matrixAdd, matrixSub, transpose, scalarMatrix, matrixVecMult, matrixMult
 
 **Author:** Riley May
 
 **Language:** python
 
-**Description/Purpose:** This program calculates various norms.  operations.  The included vector norms are the L1 norm, the L2 norm, the L infinity norm, and errors for each of those. 
+**Description/Purpose:** This program calculates various matrix operations.
+These are basic linear algebra operations. I have double checked all the outups. 
 
-**Input:** The input for the L1, L2 and Linfinty norms are all vectors. 
-The input for all of the error functions are two vectors of the same size. 
-
+**Input:** The input for all of these are arrays or two dimensional arrays. It doesn't check matrix addition and subtraction size. The multiplication operations perform checks to make sure your vectors or matrices are of the correct sizes.  Be careful with you inputs. 
+Note that the first vector is multiplied first by the second. 
+The scalar matrix multiplication is first the matrix then the scalar. 
 
 **Output:** 
 
-All of the vector operations willl return a single numerical value. 
-
+All of operations return two dimensional arrays except matrixVectMult. It is the 
 
 **Usage/Example:**
 
 Here is an example of the code working.     
-It is fairly simple code. The exact code that was run is found in Task2 of Tasksheet 9, but the output explains what is going on. 
+It is fairly simple code. The exact code that was run is found in Task3 of Tasksheet 9, but the output explains what is going on. 
+It has checks to make sure the dimensions work for the multiplication operations. 
 
     
     A = 
@@ -52,51 +53,67 @@ It is fairly simple code. The exact code that was run is found in Task2 of Tasks
     [25, 29]
 
 
-**Implementation/Code** The following code is for  vecNorms.py
+**Implementation/Code** The following code is for  matrixOps.py
 
-These are basic vector normal operations. 
+These are basic normal matrix operations. 
 
-    def l1Norm(x):
-        norm = 0
-        for i in range(len(x)):
-            norm += abs(x[i])
-        return norm
+    def matrixAdd(A, B):
+        C = [[None for k in range(len(A[0]))] for j in range(len(A))]
+        if len(A) != len(B):
+            return "Error"
+        for i in range(len(A)):
+            for j in range(len(A[i])):
+                C[i][j] = A[i][j] + B[i][j]
+        return C
 
+    def matrixSub(A, B):
+        C = [[None for k in range(len(A[0]))] for j in range(len(A))]
+        if len(A) != len(B):
+            return "Error"
+        for i in range(len(A)):
+            for j in range(len(A[i])):
+                C[i][j] = A[i][j] - B[i][j]
+        return C
 
-    def l2Norm(x):
-        normsqd = 0
-        for i in range(len(x)):
-            normsqd += x[i] * x[i]
-        norm = normsqd ** (1/2)
-        return norm
+    def transpose(mtrx):
+        # mtrxT = mtrx[:][:]
+        mtrxT = [[None for j in range(len(mtrx))] for j in range(len(mtrx[0]))]
+        # print(mtrxT)
+        # size = len(mtrx)
+        for i in range(len(mtrxT)):
+            for j in range(len(mtrxT[0])):
+                mtrxT[i][j] = mtrx[j][i]
+        return mtrxT
 
-    def lInfNorm(x):
-        norm = 0
-        for i in range(len(x)):
-            if abs(x[i]) > abs(norm):
-                norm = x[i]
-        return norm
+    def scalarMatrix(A, scalar):
+        C = [[None for k in range(len(A[0]))] for j in range(len(A))]
+        # print(C)
+        for i in range(len(A)):
+           for j in range(len(A[i])):
+               C[i][j] = A[i][j] * scalar
+        return C
 
-    def subtract(x, y):
-        if len(x) != len(y):
-            return "error in vector size"
-        err = [None for i in range(len(x))]
-        for i in range(len(x)):
-            err[i] = x[i] - y[i]
-        return err
+    def matrixVectMult(A, x):
+        b = [None for i in range(len(A))]
+        if len(A[0]) != len(x):
+            return "Sizes don't match"
+        else:
+            for i in range(len(A)):
+                b[i] = dotProd(A[i], x)
+            return b
 
-    def l1NormErr(x, y):
-        e = subtract(x, y)
-        return l1Norm(e)
-
-    def l2NormErr(x, y):
-        e = subtract(x, y)
-        return l2Norm(e)
-
-    def lInfNormErr(x, y):
-        e = subtract(x, y)
-        return lInfNorm(e)
-
+    def matrixMult(A, B):
+        C = [[None for k in range(len(A))] for j in range(len(B[0]))]
+        if len(A[0]) != len(B):
+            return "Incompatible matrix multiplication"
+        else:
+            col = [None for j in range(len(B))]
+            for i in range(len(A)):
+                for j in range(len(B[0])):
+                    for k in range(len(col)): # this gets a column from B
+                        col[k] = B[k][j] 
+                    C[i][j] = dotProd(A[i], col)
+            return C
 
 
 

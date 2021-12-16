@@ -15,9 +15,10 @@ def vecAdd(x, y):
 def vecSub(x, y):
     #code for the the second vector subtracted from the first
     if len(x) >= len(y):
+        new = [None for i in range(len(x))]
         for i in range(len(y)):
-            x[i] -= y[i]
-        return x
+            new[i] = x[i]  - y[i]
+        return new
     else:
         new = [None] *  len(y) 
         for i in range(len(x)):

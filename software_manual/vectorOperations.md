@@ -1,22 +1,21 @@
 #Math 4610 Fundamentals of Computational Mathematics Software Manual Template File
-This is a template file for building an entry in the student software manual project. You should use the formatting below to
-define an entry in your software manual.
 
-**Routine Name:**           smaceps
+
+**Routine Name:**           vecOps: vecAdd, vecSub, dotProd, outerProd
 
 **Author:** Riley May
 
 **Language:** python
 
-**Description/Purpose:** This routine will compute the single precision value for the machine epsilon or the number of digits
-in the representation of real numbers in single precision. This is a routine for analyzing the behavior of any computer. This
-usually will need to be run one time for each computer.
+**Description/Purpose:** This program calculates various vector operations. Those are vector addition (vecAdd), vector subtraction
+(vecSub),dot product (dotProd), and outer product (outerProd).
 
-**Input:** There are no inputs needed in this case. Even though there are arguments supplied, the real purpose is to
-return values in those variables.
+**Input:** The input for this program is two differente vectors. In the case of the dot product and outer product they need 
+to be vectors of the same size. 
+It is important to note that the vector
 
-**Output:** This routine returns a single precision value for the number of decimal digits that can be represented on the
-computer being queried.
+**Output:** 
+For vector addition and subtraction it outputs 
 
 **Usage/Example:**
 

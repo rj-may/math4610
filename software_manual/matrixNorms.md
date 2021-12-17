@@ -17,7 +17,7 @@ define an entry in your software manual.
 
 **Usage/Example:**
 
-This creates matrix norms for SQUARE matrices. It only needs to take a matrix an example. On the digaonlly dominant square matrix of size 100 (that code is also documented). 
+This creates matrix norms for SQUARE matrices. It only needs to take a matrix For an example onn the digaonlly dominant square matrix of size 100 (that code is also documented) these are various outputs that were reached. . 
 
       L1 Norm: 797, 797, 766, 765, 765
       L2 Norm: 208.269056751117, 204.71199280941016, 210.24271687742242, 207.95432190748045, 205.68908575809266

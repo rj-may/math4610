@@ -18,7 +18,7 @@ This will be the software manual table of contents for Math4610'ss software.  No
    [Matrix operations - matrixOps.py](https://github.com/rj-may/math4610/blob/main/lib/matrix/matrixOps.py) 
                   This includes various multiplication and addition operations.      
    [Power method - powerMethod.py](https://github.com/rj-may/math4610/blob/main/software_manual/powerMethod.md)  
-   [Power method inverse = powerMethodInverse.py](https://github.com/rj-may/math4610/blob/main/software_manual/powerMethodInverse.md)  
+   [Power method inverse - powerMethodInverse.py](https://github.com/rj-may/math4610/blob/main/software_manual/powerMethodInverse.md)  
    [Vector Norms - vecNorms.py](https://github.com/rj-may/math4610/blob/main/software_manual/vecNorms.md) This includes all 3 norms (L1, L2, Linfinity) and their errors.    
    [Vector Operations -vecOps.py](https://github.com/rj-may/math4610/blob/main/software_manual/vectorOperations.md)  This includes vector dot products, addition and subtraction and outer products.    
    

@@ -8,13 +8,15 @@ This will be the software manual table of contents for Math4610'ss software.  No
   
   Matrices:   (this code is found in the matrix subfolder of lib)        
    [Back solve - backsolve.py](https://github.com/rj-may/math4610/blob/main/software_manual/backSolve.md)  
-   [Forward solve- forwardsolve.py](https://github.com/rj-may/math4610/blob/main/software_manual/LUsolver.md)      
+   [Diagonally dominant matrix - diagDom.py](https://github.com/rj-may/math4610/blob/main/software_manual/diagonallyDominant.md)   
+   [Forward solve- forwardsolve.py](https://github.com/rj-may/math4610/blob/main/software_manual/LUsolver.md)        
     [Gaussian Elimination - gaussElim.py](https://github.com/rj-may/math4610/blob/main/software_manual/gaussElim.md)     
    [Gaussian elimination with scaled pivoting -geScaledPivot](https://github.com/rj-may/math4610/blob/main/software_manual/gaussElimScaledPivot.md)     
-   [LU factor - LUfactor.py](https://github.com/rj-may/math4610/blob/main/software_manual/LUfactor.md)     
-   [LU solver - LUsolver.py](https://github.com/rj-may/math4610/blob/main/software_manual/LUsolver.md)     
+   [LU factor - LUfactor.py](https://github.com/rj-may/math4610/blob/main/software_manual/LUfactor.md)      
+   [LU solver - LUsolver.py](https://github.com/rj-may/math4610/blob/main/software_manual/LUsolver.md)      
+   [Matrix Norms - matrixNorms.py](https://github.com/rj-may/math4610/blob/main/software_manual/matrixNorms.md)  
    [Matrix operations - matrixOps.py](https://github.com/rj-may/math4610/blob/main/lib/matrix/matrixOps.py) 
-                  This includes various multiplication and addition operations.     
+                  This includes various multiplication and addition operations.      
    [Power method - powerMethod.py](https://github.com/rj-may/math4610/blob/main/software_manual/powerMethod.md)  
    [Power method inverse = powerMethodInverse.py](https://github.com/rj-may/math4610/blob/main/software_manual/powerMethodInverse.md)  
    [Vector Norms - vecNorms.py](https://github.com/rj-may/math4610/blob/main/software_manual/vecNorms.md) This includes all 3 norms (L1, L2, Linfinity) and their errors.    

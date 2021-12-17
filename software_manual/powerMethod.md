@@ -14,7 +14,7 @@
 **Output:** This routine returns a single numerical eigenvaulue. It should be the largest eigen value of a matrix. 
 **Usage/Example:**
 
-This rout outputs the largest eigenvalue usign the power method. 
+This routinw outputs the largest eigenvalue usign the power method. 
 
 When I ran this code on 100x100 matrix diagonally dominant matrix , it produced the following eigeenvalues.           
     largest eigen value =  228.05502704975788              

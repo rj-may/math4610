@@ -2,7 +2,7 @@
 
 # Welcome
 
-This is the repository for my Math4610 homework. Here will be links to individual homework files, and one  day much more. 
+This is the repository for my Math4610 code repository. 
 
 # Software manual
 For the software manual click here ---> [software manual table of contents](https://github.com/rj-may/math4610/blob/main/software_manual/software_manual_toc.md)
